@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
+
+/* #407BFF */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #313131;
+}
+
+.icon img {
+  width: 15.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 18.5rem;
+  padding: 1.5rem;
+  background-color: #3f3f3f;
+  text-align: justify;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.389);
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 20px solid transparent;
+  border-top: 20px solid #407BFF;
+  border-right: 20px solid #407BFF;
+}
+
+.icon {
+  margin-bottom: 1.5rem;
+}
+
+.content {
+  height: 13.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6.5rem;
+  background: linear-gradient(transparent, #3f3f3f);
+}
+
+.content h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.content h3::before {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 3px;
+  border-radius: 6.5rem;
+  background-color: #407BFF;
+  bottom: 2px;
+}
+
+.content p {
+  color: #b7b7b7;
+}
+
+#read-button {
+  border: none;
+  padding: 0.7rem;
+  border-radius: .3rem;
+  margin-top: 1rem;
+  background-color: #407BFF;
+  color: #313131;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#read-button:hover {
+  background-color: transparent;
+  color: #407BFF;
+}
+
+.card.active .content {
+  height: auto;
+}
+
+.card.active .content::before {
+  visibility: hidden;
+}
