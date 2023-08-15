@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Calcular IMC</title>
+</head>
+<body>
+    <main class="calculadora-box">
+        <h2>Calculadora - Juros Compostos</h2>
+
+
+        <div class="inputs">
+            <div class="input-box">
+                <input type="number" name="valor-inicial" id="valor-inicial" step="any" required>
+                <label for="valor-inicial">Valor inicial (Capital)</label>
+            </div>
+    
+            <div class="input-box">
+                <input type="number" name="taxa-juros" id="taxa-juros" step="any" required>
+                <label for="taxa-juros">Taxa de Juros</label>
+            </div>
+            
+            <div class="input-box">
+                <input type="number" name="periodo" id="periodo" required>
+                <label for="periodo">Tempo de Rendimento</label>
+            </div>
+        </div>
+
+        <div class="res">
+            <span>Resultado:</span>
+            <h2 id="total">R$ 0,00</h2>
+        </div>
+
+        <button id="calculate">
+            <span>Calcular</span>
+        </button>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

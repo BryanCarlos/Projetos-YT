@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+    --gradient-color: linear-gradient(-135deg, rgb(131, 255, 214), rgb(43, 255, 156), rgb(65, 252, 196))
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    background: #353535;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-radius: .4rem;
+    box-shadow: .3rem .3rem .2rem rgba(0, 0, 0, .5);
+}
+
+main h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+main > h2::after {
+    position: absolute;
+    content: '';
+    width: 4rem;
+    height: 2px;
+    background: var(--gradient-color);
+    bottom: -2px;
+    left: 0;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.inputs .input-box {
+    position: relative;
+    width: 100%;
+    transition: .3s;
+    display: flex;
+}
+
+.inputs .input-box::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-color);
+    bottom: -2px;
+    left: 0;
+}
+
+.inputs .input-box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: .4rem;
+    
+}
+
+.inputs .input-box input::-webkit-inner-spin-button,
+.inputs .input-box input::-webkit-outer-spin-button {
+    display: none;
+}
+
+.inputs .input-box label {
+    position: absolute;
+    bottom: .4rem;
+    left: .4rem;
+    transition: .3s;
+    
+}
+
+.inputs .input-box input:valid ~ label,
+.inputs .input-box input:focus ~ label {
+    bottom: 1.6rem;
+    left: 0;
+    font-size: .8rem;
+    color: #2bff9c;
+}
+
+.inputs .input-box select {
+    background: transparent;
+    border: none;
+    width: 7rem;
+}
+
+.inputs .input-box select>option {
+    background-color: #353535;
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora-box button {
+    padding: .8rem 0;
+    background: var(--gradient-color);
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0rem .35rem 0 0 rgb(0, 100, 53);
+    cursor: pointer;
+}
+
+.calculadora-box button span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.calculadora-box button:active, 
+.calculadora-box button:focus-visible {
+    transform: translateY(.35rem);
+    box-shadow: none;
+}
