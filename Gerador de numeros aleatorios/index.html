@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Gerador Números</title>
+</head>
+<body>
+  <div class="box">
+    <h2>Gerador de Números</h2>
+
+    <div class="inputs">
+      <div class="input-box">
+        <label for="minValue">Min:</label>
+        <input type="number" name="minValue" id="minValue" step="any" required>
+      </div>
+  
+      <div class="input-box">
+        <label for="maxValue">Max:</label>
+        <input type="number" name="maxValue" id="maxValue"
+        step="any" required>
+      </div>
+    </div>
+
+    <button id="generate">Gerar</button>
+
+    <span id="res">00</span>
+  </div>
+
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

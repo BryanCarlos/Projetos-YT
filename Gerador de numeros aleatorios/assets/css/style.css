@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #212121;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .4rem;
+  box-shadow: .3rem .3rem .6rem rgba(23, 69, 83, 0.5);
+}
+
+.box h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.box .inputs {
+  display: flex;
+  align-items: center;
+  column-gap: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.box .inputs .input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: .15rem solid #37effc;
+}
+
+.box .inputs .input-box input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: .4rem 0;
+}
+
+.box .inputs .input-box input::-webkit-inner-spin-button,
+.box .inputs .input-box input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.box button {
+  background: #37effc;
+  width: 100%;
+  padding: .5rem 0;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  border-radius: .4rem;
+  margin-bottom: 1.5rem;
+}
+
+.box button:hover {
+  transform: scale(1.05);
+  background-color: #3ab4ae;
+}
+
+.box span {
+  font-weight: bold;
+  font-size: 2rem;
+}
